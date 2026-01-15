@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor: #00416b;
+    --textColor: #f1ead6;
+    --borderColor: #f1ead6;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bgColor);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: var(--textColor);
+}
+
+.container .timeElement{
+    border: 1px solid var(--borderColor);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 26px;
+}
