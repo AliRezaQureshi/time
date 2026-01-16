@@ -6,7 +6,9 @@ setInterval(()=> {
 }, 1000
 )
 
-darkBtn.addEventListener(() => {
-    body.classList.add("dark");
-    darkBtn.textContent = "☀️";
+darkBtn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    body.style.transition = "1s";
+    const isDark = body.classList.contains("dark");
+    darkBtn.textContent = isDark? "☀️" : "🌙";
 })
